@@ -71,7 +71,7 @@ fun WelcomeScreen(
             )
 
             Text(
-                text = "2023014067",
+                text = "20230140067",
                 fontSize = 22.sp,
                 fontWeight = FontWeight.Bold
             )
