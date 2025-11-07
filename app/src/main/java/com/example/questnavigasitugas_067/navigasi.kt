@@ -33,6 +33,19 @@ fun DataApp(
                     }
                 )
             }
+            composable(route = Navigasi.Detail.name) {
+                TampilData(
+                    onHomeClick = {
+                        navController.popBackStack(
+                            Navigasi.Welcome.name,
+                            inclusive = false
+                        )
+                    },
+                    onFormClick = {
+                        navController.navigate(com.example.latihan.Navigasi.Formulirku.name)
+                    }
+                )
+            }
         }
     }
 }
