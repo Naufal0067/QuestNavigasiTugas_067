@@ -18,5 +18,7 @@
     <string name="placeholder_alamat">Alamat</string>
     <string name="list_title">List Daftar Peserta</string>
     <string name="nama_lengkap">NAMA LENGKAP</string>
-
+    <string name="jenis_kelamin">JENIS KELAMIN</string>
+    <string name="status_perkawinan">STATUS PERKAWINAN</string>
+    <string name="alamat">ALAMAT</string>
 </resources>
