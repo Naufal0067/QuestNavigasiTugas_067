@@ -6,6 +6,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 
 enum class Navigasi {
@@ -24,7 +25,14 @@ fun DataApp(
             navController = navController,
             startDestination = Navigasi.Welcome.name,
             modifier = Modifier.padding(isiRuang)
-        ){
-
+        ) {
+            composable(route = Navigasi.Welcome.name) {
+                WelcomeScreen(
+                    onSubmitClick = {
+                        navController.navigate(Navigasi.Detail.name)
+                    }
+                )
+            }
         }
+    }
 }
