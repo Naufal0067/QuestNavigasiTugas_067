@@ -8,6 +8,9 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.questnavigasitugas_067.view.FormDataDiri
+import com.example.questnavigasitugas_067.view.TampilData
+import com.example.questnavigasitugas_067.view.WelcomeScreen
 
 enum class Navigasi {
     Welcome,
@@ -42,7 +45,7 @@ fun DataApp(
                         )
                     },
                     onFormClick = {
-                        navController.navigate(com.example.latihan.Navigasi.Formulirku.name)
+                        navController.navigate(Navigasi.Formulirku.name)
                     }
                 )
             }
