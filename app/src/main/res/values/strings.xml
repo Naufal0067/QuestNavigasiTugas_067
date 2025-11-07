@@ -16,4 +16,7 @@
     <string name="sk_duda">Duda</string>
     <string name="label_alamat">ALAMAT</string>
     <string name="placeholder_alamat">Alamat</string>
+    <string name="list_title">List Daftar Peserta</string>
+    <string name="nama_lengkap">NAMA LENGKAP</string>
+
 </resources>
