@@ -10,4 +10,5 @@
     <string name="label_jenis_kelamin">JENIS KELAMIN</string>
     <string name="jk_laki_laki">Laki-laki</string>
     <string name="jk_perempuan">Perempuan</string>
+    <string name="label_status_kawin">STATUS PERKAWINAN</string>
 </resources>
