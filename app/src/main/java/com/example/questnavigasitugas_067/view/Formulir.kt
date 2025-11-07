@@ -118,4 +118,28 @@ fun FormDataDiri(
                     }
                 }
             }
+            Text(
+                text = stringResource(R.string.label_status_kawin),
+                fontWeight = FontWeight.Bold
+            )
+            Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                statusKawinOptions.forEach { item ->
+                    Row(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .selectable(
+                                selected = textStatusKawin == item,
+                                onClick = { textStatusKawin = item },
+                                role = Role.RadioButton
+                            ),
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        RadioButton(
+                            selected = textStatusKawin == item,
+                            onClick = { textStatusKawin = item }
+                        )
+                        Text(item)
+                    }
+                }
+            }
 }
