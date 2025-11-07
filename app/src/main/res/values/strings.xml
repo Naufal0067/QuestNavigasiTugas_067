@@ -4,4 +4,6 @@
     <string name="submit_button">Submit</string>
     <string name="formulir_pendaftaran">Formulir Pendaftaran</string>
     <string name="tampil">Tampilan Data</string>
+    <string name="label_form_title">Formulir Pendaftaran</string>
+    <string name="label_nama_lengkap">NAMA LENGKAP</string>
 </resources>
