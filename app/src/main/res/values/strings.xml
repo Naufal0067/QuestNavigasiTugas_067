@@ -6,4 +6,6 @@
     <string name="tampil">Tampilan Data</string>
     <string name="label_form_title">Formulir Pendaftaran</string>
     <string name="label_nama_lengkap">NAMA LENGKAP</string>
+    <string name="placeholder_nama">Nama lengkap</string>
+    <string name="label_jenis_kelamin">JENIS KELAMIN</string>
 </resources>
