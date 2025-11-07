@@ -8,4 +8,6 @@
     <string name="label_nama_lengkap">NAMA LENGKAP</string>
     <string name="placeholder_nama">Nama lengkap</string>
     <string name="label_jenis_kelamin">JENIS KELAMIN</string>
+    <string name="jk_laki_laki">Laki-laki</string>
+    <string name="jk_perempuan">Perempuan</string>
 </resources>
