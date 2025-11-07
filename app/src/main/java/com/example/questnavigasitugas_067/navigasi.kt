@@ -46,6 +46,16 @@ fun DataApp(
                     }
                 )
             }
+            composable(route = Navigasi.Formulirku.name) {
+                FormDataDiri(
+                    onSubmit = {
+                        navController.popBackStack(
+                            Navigasi.Detail.name,
+                            inclusive = false
+                        )
+                    }
+                )
+            }
         }
     }
 }
