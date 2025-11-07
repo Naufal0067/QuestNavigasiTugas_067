@@ -3,12 +3,16 @@ package com.example.questnavigasitugas_067.view
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.selection.selectable
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.material3.Button
+import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.OutlinedTextField
@@ -32,6 +36,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.questnavigasitugas_067.R
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun FormDataDiri(
     modifier: Modifier = Modifier.fillMaxSize(),
@@ -142,4 +147,25 @@ fun FormDataDiri(
                     }
                 }
             }
+            Text(
+                text = stringResource(R.string.label_alamat),
+                fontWeight = FontWeight.Bold
+            )
+            OutlinedTextField(
+                value = textAlamat,
+                onValueChange = { textAlamat = it },
+                modifier = Modifier.fillMaxWidth(),
+                placeholder = { Text(stringResource(R.string.placeholder_alamat)) }
+            )
+
+            Spacer(modifier = Modifier.height(12.dp))
+
+            Button(
+                modifier = Modifier.fillMaxWidth(1f),
+                onClick = onSubmit
+            ){
+                Text(stringResource(id = R.string.submit))
+            }
+        }
+    }
 }
