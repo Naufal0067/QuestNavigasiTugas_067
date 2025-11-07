@@ -3,11 +3,13 @@ package com.example.questnavigasitugas_067.view
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
+import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
@@ -73,5 +75,22 @@ fun FormDataDiri(
                 .padding(innerPadding)
                 .padding(horizontal = 20.dp, vertical = 12.dp),
             verticalArrangement = Arrangement.spacedBy(10.dp)
-        )
+        ){
+
+            Text(
+                text = stringResource(R.string.label_nama_lengkap),
+                fontWeight = FontWeight.Bold
+            )
+            OutlinedTextField(
+                value = textNama,
+                onValueChange = { textNama = it },
+                modifier = Modifier.fillMaxWidth(),
+                singleLine = true,
+                placeholder = { Text(stringResource(R.string.placeholder_nama)) }
+            )
+
+            Text(
+                text = stringResource(R.string.label_jenis_kelamin),
+                fontWeight = FontWeight.Bold
+            )
 }
